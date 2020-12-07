@@ -1,0 +1,101 @@
+graph {
+    padding: 40px;
+ }
+
+node {
+    text-mode: hidden;
+    text-alignment: under;
+    text-background-mode: rounded-box;
+	shape: box;
+    size-mode: fit;
+    fill-mode:plain;
+    stroke-mode:plain;
+    size: 40, 40, 40;
+    fill-color:white;
+    padding:2,2,2;
+}
+
+node:clicked {
+   size: 60, 60, 60;
+}
+
+//appears to be not working
+node:selected  {
+}
+
+node.REPEATER {
+    size-mode: normal;
+    fill-mode: image-scaled;
+    fill-image: url('file:///Users/Ludwig/Desktop/uni/bachelor/run/GraphPics/MC_Repeater.png');
+}
+
+
+node.COMPARATOR {
+    size-mode: normal;
+    fill-mode: image-scaled;
+    fill-image: url('file:///Users/Ludwig/Desktop/uni/bachelor/run/GraphPics/MC_Comparator.png');
+}
+
+
+node.INPUT {
+    size-mode: normal;
+    fill-mode: image-scaled;
+    fill-image: url('file:///Users/Ludwig/Desktop/uni/bachelor/run/GraphPics/MC_Input.png');
+}
+
+node.LEVER {
+    size-mode: normal;
+    fill-mode: image-scaled;
+    fill-image: url('file:///Users/Ludwig/Desktop/uni/bachelor/run/GraphPics/MC_Lever.png');
+}
+
+node.TORCH {
+    size-mode: normal;
+    fill-mode: image-scaled;
+    fill-image: url('file:///Users/Ludwig/Desktop/uni/bachelor/run/GraphPics/MC_Torch.png');
+}
+
+
+node.BUTTON {
+    size-mode: normal;
+    fill-mode: image-scaled;
+    fill-image: url('file:///Users/Ludwig/Desktop/uni/bachelor/run/GraphPics/MC_Button.png');
+}
+
+edge.indirectEdge {
+    fill-mode: none;
+    stroke-mode: dots;
+    stroke-color: black;
+}
+edge.ReaperterEdgeAtLockPosition {
+    fill-color: blue;
+}
+edge.ComparatorEdgeAtSubtractspot {
+    fill-color: red;
+}
+
+edge.Powered {
+    fill-color: black;
+    //gradient-radial;
+    //testing purpose
+    //stroke-mode: dots;
+}
+edge.Unpowered {
+    fill-color: black;
+    //fill-mode: gradient-radial;
+    //testing purpose
+    //stroke-mode: dots;
+}
+edge.PoweredButNotReaching {
+    fill-color: black;
+    //gradient-radial;
+    stroke-mode: dots;
+}
+
+node.Powered{
+    stroke-color: black;
+}
+
+node.Unpowered{
+    stroke-color: black;
+}
